@@ -1,5 +1,5 @@
 import { Component, signal } from '@angular/core';
-import { email, Field, form, minLength, required, validate } from '@angular/forms/signals';
+import { email, Field, form, minLength, required } from '@angular/forms/signals';
 import { confirmPassword } from '../../validators/confirm-password';
 
 @Component({
