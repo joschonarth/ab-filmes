@@ -16,7 +16,7 @@ export class UserInfosStore {
 
     if (!HAS_USER) return userNameLocalStorage ? userNameLocalStorage : '';
 
-    return this.user()?.name;
+    return this.user()?.name ?? '';
   });
 
   setUserInfos(user: IUserInfos) {

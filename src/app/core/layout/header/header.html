@@ -60,11 +60,14 @@
       <strong>{{ _userInfosStore.userName() }}</strong>
     </div>
 
-    <img
-      src="https://github.com/rocketseat.png"
-      alt="Foto de perfil de Heverys"
-      class="w-10 h-10 rounded-full border-2 border-purple-600"
-    />
+    <div
+      role="img"
+      aria-label="Foto de perfil do usuário"
+      title="{{ _userInfosStore.userName() || 'Usuário' }}"
+      class="w-10 h-10 rounded-full border-2 border-purple-600 bg-purple-600 text-white text-sm font-bold flex items-center justify-center"
+    >
+      {{ getInitials(_userInfosStore.userName()) }}
+    </div>
 
     <button
       (click)="logout()"
