@@ -1,4 +1,4 @@
-import { Component, inject, linkedSignal, signal } from '@angular/core';
+import { Component, inject, linkedSignal } from '@angular/core';
 import { MoviesList } from '../../../../shared/components/movies-list/movies-list';
 import { MoviesFilter } from '../../components/movies-filter/movies-filter';
 import { MoviesApi } from '../../services/movies-api';
@@ -12,8 +12,6 @@ import { rxResource } from '@angular/core/rxjs-interop';
 })
 export class ExploreMovies {
   private readonly _moviesApi = inject(MoviesApi);
-
-  movies = signal([{}]);
 
   moviesResource = rxResource({
     params: () => true,
