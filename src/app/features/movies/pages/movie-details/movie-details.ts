@@ -11,6 +11,7 @@ import { MoviesApi } from '../../services/movies-api';
 import { FavoritesApi } from '../../../../shared/services/favorites-api';
 import { rxResource } from '@angular/core/rxjs-interop';
 import { DecimalPipe } from '@angular/common';
+import { tap } from 'rxjs';
 
 @Component({
   selector: 'app-movie-details',
@@ -48,6 +49,20 @@ export class MovieDetails {
     const boolArray = [0, 1, 2, 3, 4].map((index) => index < rating);
 
     return boolArray;
+  });
+
+  rateMovieResource = rxResource({
+    params: () => {
+      const rating = this.currentRating() ?? 0;
+
+      if (rating > 0) return { id: +this.id(), rating };
+
+      return undefined;
+    },
+    stream: ({ params }) =>
+      this._moviesApi
+        .rateMovie(params.id, params.rating)
+        .pipe(tap((movieUpdated) => this.movieDetails.set(movieUpdated))),
   });
 
   toggleFavorite() {
