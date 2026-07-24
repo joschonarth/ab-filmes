@@ -91,7 +91,6 @@ Neste projeto, os **signals** do Angular são utilizados como principal forma de
    ```bash
    cd server
    npm install
-   cd ..
    ```
 
 ### ▶️ Execução
