@@ -21,6 +21,10 @@ _Gerenciador de catálogo de filmes com avaliações, favoritos e autenticação
 
 ---
 
+<img width="1366" height="1197" alt="screencapture-localhost-4200-explore-2026-07-23-21_53_25" src="https://github.com/user-attachments/assets/b56cbcaa-3fcc-47bc-bfcb-016971955205" />
+
+---
+
 ## 📃 Sobre
 
 O **AB Filmes** é uma aplicação web para gerenciamento de catálogo de filmes, desenvolvida com **Angular** no frontend e **Node.js/Express** no backend. O usuário pode criar uma conta, fazer login e cadastrar filmes com imagem, título, ano de lançamento, gênero e descrição. É possível avaliar cada filme com estrelas, marcar filmes como favoritos e filtrar o catálogo por nome ou categoria.
