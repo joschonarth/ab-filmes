@@ -110,6 +110,17 @@ npm run start
 
 Acesse **[http://localhost:4200](http://localhost:4200)** no navegador.
 
+### 🌱 Populando com dados de exemplo
+
+O projeto inclui um conjunto de filmes de exemplo para facilitar os testes. Para populá-lo:
+
+```bash
+cd server
+npm run seed
+```
+
+Isso irá copiar os filmes de exemplo para `server/data/movies.json` e as respectivas imagens para `server/public/uploads`.
+
 ---
 
 ## ⭐ Apoie este Projeto
