@@ -1,9 +1,9 @@
-import { Component, computed, signal } from '@angular/core';
+import { Component, computed, effect, inject, signal } from '@angular/core';
 import { rxResource } from '@angular/core/rxjs-interop';
 import { FormsModule } from '@angular/forms';
 import { MoviesApi } from '../../services/movies-api';
 import { setErrorMessage } from '../../../../shared/utils/set-error-message';
-import { RouterLink } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-create-movie',
@@ -13,6 +13,7 @@ import { RouterLink } from '@angular/router';
 })
 export class CreateMovie {
   private readonly _moviesApi = new MoviesApi();
+  private readonly _router = inject(Router);
 
   title = signal<string>('');
   year = signal<number | undefined>(undefined);
@@ -28,6 +29,18 @@ export class CreateMovie {
     params: () => this.movieFormData(),
     stream: ({ params }) => this._moviesApi.createMovie(params),
   });
+
+  constructor() {
+    effect(() => {
+      const wasCreated = this.createMovieResource.hasValue();
+
+      if (wasCreated) {
+        setTimeout(() => {
+          this._router.navigate(['/explore']);
+        }, 1000);
+      }
+    });
+  }
 
   errorMessage = computed(() => setErrorMessage(this.createMovieResource.error()));
   successMessage = computed(() => {
