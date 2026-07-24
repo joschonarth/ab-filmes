@@ -38,6 +38,10 @@ testem.log
 /typings
 __screenshots__/
 
+# Server runtime data and uploaded assets should stay local only
+/server/public/uploads/
+/server/data/
+
 # System files
 .DS_Store
 Thumbs.db
