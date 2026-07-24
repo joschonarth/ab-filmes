@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1784851162120,
+    "titulo": "Michael",
+    "descricao": "The story of Michael Jackson, one of the most influential artists the world has ever known, and his life beyond the music. His journey from the discovery of his extraordinary talent as the lead of the Jackson Five, to the visionary artist whose creative ambition fueled a relentless pursuit to become the biggest entertainer in the world, highlighting both his life off-stage and some of the most iconic performances from his early solo career.",
+    "genero": "Music and Drama",
+    "anoLancamento": 2026,
+    "caminhoImagem": "/uploads/image-1784851162115-384027316.webp",
+    "qtdVotos": 1247,
+    "mediaVotos": 4.6
+  },
+  {
+    "id": 1784851225108,
+    "titulo": "Project Hail Mary",
+    "descricao": "Science teacher Ryland Grace wakes up on a spaceship light years from home with no recollection of who he is or how he got there. As his memory returns, he begins to uncover his mission: solve the riddle of the mysterious substance causing the sun to die out. He must call on his scientific knowledge and unorthodox ideas to save everything on Earth from extinction.",
+    "genero": "Science Fiction",
+    "anoLancamento": 2026,
+    "caminhoImagem": "/uploads/image-1784851225107-105202914.webp",
+    "qtdVotos": 893,
+    "mediaVotos": 4.8
+  },
+  {
+    "id": 1784851314441,
+    "titulo": "Spider-Man: No Way Home",
+    "descricao": "Peter Parker is unmasked and no longer able to separate his normal life from the high-stakes of being a super-hero. When he asks for help from Doctor Strange the stakes become even more dangerous, forcing him to discover what it truly means to be Spider-Man.",
+    "genero": "Action",
+    "anoLancamento": 2021,
+    "caminhoImagem": "/uploads/image-1784851314439-775915950.webp",
+    "qtdVotos": 15892,
+    "mediaVotos": 4.9
+  },
+  {
+    "id": 1784851359507,
+    "titulo": "The Dark Knight",
+    "descricao": "Batman raises the stakes in his war on crime. With the help of Lt. Jim Gordon and District Attorney Harvey Dent, Batman sets out to dismantle the remaining criminal organizations that plague the streets. The partnership proves to be effective, but they soon find themselves prey to a reign of chaos unleashed by a rising criminal mastermind known to the terrified citizens of Gotham as the Joker.",
+    "genero": "Action",
+    "anoLancamento": 2008,
+    "caminhoImagem": "/uploads/image-1784851359506-695297888.webp",
+    "qtdVotos": 21437,
+    "mediaVotos": 5.0
+  },
+  {
+    "id": 1784851391325,
+    "titulo": "Oppenheimer",
+    "descricao": "The story of J. Robert Oppenheimer's role in the development of the atomic bomb during World War II.",
+    "genero": "History",
+    "anoLancamento": 2023,
+    "caminhoImagem": "/uploads/image-1784851391323-679373843.webp",
+    "qtdVotos": 9841,
+    "mediaVotos": 4.7
+  },
+  {
+    "id": 1784851514660,
+    "titulo": "Sinners",
+    "descricao": "Trying to leave their troubled lives behind, twin brothers return to their hometown to start again, only to discover that an even greater evil is waiting to welcome them back.",
+    "genero": "Thriller",
+    "anoLancamento": 2025,
+    "caminhoImagem": "/uploads/image-1784851514659-358424697.webp",
+    "qtdVotos": 3521,
+    "mediaVotos": 4.5
+  },
+  {
+    "id": 1784851546424,
+    "titulo": "Avengers: Endgame",
+    "descricao": "After the devastating events of Avengers: Infinity War, the universe is in ruins due to the efforts of the Mad Titan, Thanos. With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos' actions and restore order to the universe once and for all, no matter what consequences may be in store.",
+    "genero": "Action",
+    "anoLancamento": 2019,
+    "caminhoImagem": "/uploads/image-1784851546423-405020424.webp",
+    "qtdVotos": 28754,
+    "mediaVotos": 4.8
+  },
+  {
+    "id": 1784851593442,
+    "titulo": "Joker",
+    "descricao": "During the 1980s, a failed stand-up comedian is driven insane and turns to a life of crime and chaos in Gotham City while becoming an infamous psychopathic crime figure.",
+    "genero": "Drama",
+    "anoLancamento": 2019,
+    "caminhoImagem": "/uploads/image-1784851593440-404973311.webp",
+    "qtdVotos": 13218,
+    "mediaVotos": 4.6
+  }
+]
