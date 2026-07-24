@@ -1,10 +1,11 @@
-import { Component, computed, inject, signal } from '@angular/core';
+import { Component, computed, effect, inject, signal } from '@angular/core';
 import { email, Field, form, minLength, required } from '@angular/forms/signals';
 import { confirmPassword } from '../../validators/confirm-password';
 import { IRegisterParams } from '../../../../shared/models/register-params';
 import { UserApi } from '../../../../core/services/user-api';
 import { rxResource } from '@angular/core/rxjs-interop';
 import { setErrorMessage } from '../../../../shared/utils/set-error-message';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-register-user-form',
@@ -14,6 +15,7 @@ import { setErrorMessage } from '../../../../shared/utils/set-error-message';
 })
 export class RegisterUserForm {
   private readonly _userApi = inject(UserApi);
+  private readonly _router = inject(Router);
 
   registerModel = signal<IRegisterParams>({
     name: '',
@@ -38,6 +40,18 @@ export class RegisterUserForm {
     params: () => this.registerParams(),
     stream: ({ params }) => this._userApi.register(params.name, params.email, params.password),
   });
+
+  constructor() {
+    effect(() => {
+      const wasRegistered = this.registerResource.hasValue();
+
+      if (wasRegistered) {
+        setTimeout(() => {
+          this._router.navigate(['/login']);
+        }, 1000);
+      }
+    });
+  }
 
   registerError = computed(() => setErrorMessage(this.registerResource.error()));
 
